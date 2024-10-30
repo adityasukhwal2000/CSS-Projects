@@ -1,0 +1,90 @@
+/* base style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif,serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*  */
+
+body{
+    background-color: hsl(0, 0%, 94%);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.img-container{
+    width: 90rem;
+    height: 50rem;
+    background-image:
+    url("https://images.pexels.com/photos/5409751/pexels-photo-5409751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 7px 5px rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    animation: carousel 14s linear  infinite ;
+    -webkit-animation: carousel 14s linear  infinite ;
+}
+
+
+@media (width >= 1400px){
+    .img-container{
+        width: 69%;
+        height: 70rem;
+    }
+}
+
+@media (width <= 1024px){
+    .img-container{
+        width: 82%;
+        height: 42rem;
+    }
+}
+
+
+@media (width <= 576px){
+    .img-container{
+        width: 80%;
+        height: 25rem;
+    }
+}
+
+@media (width <= 425px){
+    .img-container{
+        width: 84%;
+        height: 19rem;
+    }
+}
+
+
+@keyframes carousel {
+
+    20%{
+        background-image: url("https://images.pexels.com/photos/8100784/pexels-photo-8100784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+
+    40%{
+        background-image: url("https://images.pexels.com/photos/10528234/pexels-photo-10528234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+
+    60%{
+        background-image: url("https://images.pexels.com/photos/4338015/pexels-photo-4338015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+
+    80%{
+        background-image: url("https://images.pexels.com/photos/2131623/pexels-photo-2131623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+
+    100%{
+        background-image: url("https://images.pexels.com/photos/1311445/pexels-photo-1311445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    
+}
