@@ -1,0 +1,75 @@
+/* base style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif, serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*  */
+
+body {
+  background-color: #191825;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.neonLader-container {
+  width: 23rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #865dff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+  animation: rotateNeon 2s linear infinite;
+  -webkit-animation: rotateNeon 2s linear infinite;
+}
+
+.neonLader-container::before {
+  content: "";
+  width: 19rem;
+  aspect-ratio: 1;
+  background-color: #191825;
+  border-radius: 50%;
+  position: absolute;
+  top: 1rem;
+}
+
+.neonLader-container::after {
+  content: "";
+  width: 7rem;
+  aspect-ratio: 1;
+  background-color: #865dff;
+  box-shadow: 0 0 1.3rem 0.8rem #865dff;
+  border-radius: 50%;
+  position: absolute;
+  left: 3rem;
+  top: -1.3rem;
+}
+
+@keyframes rotateNeon {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+  }
+}
