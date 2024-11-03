@@ -1,0 +1,58 @@
+/* base style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif, serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  /*  */
+  
+  body {
+    background-color: #191825;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  }
+
+  button.btnShake {
+  padding: 1.5rem 3.7rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  text-transform: uppercase;
+  border:0.2rem solid #865dff;
+  background-color: #191825;
+  color: #865dff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #000;
+ 
+  &:hover{
+    border:0.2rem solid #d80032;
+    color: #d80032;
+    animation: buttonShake 0.2s linear;
+    -webkit-animation: buttonShake 0.2s linear;
+
+  }
+}
+
+   
+
+@keyframes buttonShake {
+    0%{
+        rotate: 20deg;
+    }
+    50%{
+        rotate: -20deg;
+    }
+    100%{
+        rotate: 20deg;
+    }
+}
+

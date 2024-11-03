@@ -1,0 +1,43 @@
+/* base style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bungee Spice", cursive, sans-serif, serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  /*  */
+  
+  body {
+    background-color: #191825;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  }
+
+h1{
+    font-size: 5.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow:  -0.4rem 1rem 0.7rem #e4700052;
+    animation: textFloat 1s linear infinite alternate;
+    -webkit-animation: textFloat 1s linear infinite alternate;
+}
+
+@keyframes textFloat {
+
+    0%{
+        rotate: 20deg;
+    }
+
+    100%{
+        rotate: -20deg;
+    }
+    
+}
