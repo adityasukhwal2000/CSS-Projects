@@ -1,0 +1,102 @@
+/* base style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif, serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*  */
+
+body {
+  background-color: hsl(0, 5%, 96%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.universe {
+  width: 55rem;
+  aspect-ratio: 1;
+  background-color: #86cfedc7;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  animation: universeBg 8s ease-in-out infinite;
+  -webkit-animation: universeBg 8s ease-in-out infinite;
+}
+
+.sun {
+  width: 27rem;
+  aspect-ratio: 1;
+  background-color: #ffbb5c;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    width: 27rem;
+    aspect-ratio: 1;
+    background-color: #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    animation: lunar 8s ease-in-out infinite;
+    -webkit-animation: lunar 8s ease-in-out infinite;
+  }
+}
+
+@keyframes lunar {
+  0% {
+    translate: 100%;
+  }
+
+  50% {
+    translate: 0%;
+    scale: 0.96;
+  }
+
+  100% {
+    translate: -100%;
+  }
+}
+
+@keyframes universeBg {
+  0% {
+    background: #90b2c1f5;
+  }
+
+  25% {
+    background: #3a4144f5;
+  }
+
+  50% {
+    background-color: #000;
+  }
+
+  75% {
+    background: #3a4144f5;
+  }
+
+  100% {
+    background-color: #86cfedc7;
+  }
+}
