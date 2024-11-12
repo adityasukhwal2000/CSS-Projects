@@ -1,0 +1,60 @@
+/* base style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif, serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*  */
+
+body {
+  background-color: #191825;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.waveBtn {
+  text-decoration: none;
+  padding: 2.5rem 7.7rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  text-transform: uppercase;
+  border: 0.2rem solid #66c3ea;
+  /* background-color: #66c3ea; */
+  background-color: #191825;
+  background-image: url("wave_pic.webp");
+  /* background-position: 100% 100%; */
+  background-position-y: 100%;
+  background-size: 100% 96%;
+  background-repeat: repeat-x;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    /*background-color: #191825;
+    */animation: wave 1s linear infinite;
+    -webkit-animation: wave 1s linear infinite;
+}
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: -2rem;
+  }
+
+
+  100% {
+    background-position-x: 1rem;
+    
+  }
+}
