@@ -1,0 +1,54 @@
+/* base style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif, serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*  */
+
+body {
+  background-color: #191825;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: changeBg 8s linear infinite;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+@keyframes changeBg {
+  0% {
+    background-color: rgb(243, 131, 25);
+  }
+
+  20% {
+    background-color: rgb(69, 243, 25);
+  }
+
+  40% {
+    background-color: rgb(243, 25, 243);
+  }
+
+  60% {
+    background-color: rgb(221, 243, 25);
+  }
+
+  80% {
+    background-color: rgb(243, 69, 25);
+  }
+
+  100% {
+    background-color: rgb(25, 199, 243);
+  }
+}
